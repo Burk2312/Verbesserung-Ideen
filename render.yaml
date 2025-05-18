@@ -1,8 +1,7 @@
-// pages/_app.js
-import '../styles/globals.css';
-
-function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />;
-}
-
-export default MyApp;
+services:
+  - type: web
+    name: mein-verbesserungsvorschlag
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
