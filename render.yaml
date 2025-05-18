@@ -1,6 +1,8 @@
-services:
-  - type: web
-    name: verbesserungs-app
-    env: python
-    buildCommand: ""
-    startCommand: gunicorn app:app
+// pages/_app.js
+import '../styles/globals.css';
+
+function MyApp({ Component, pageProps }) {
+    return <Component {...pageProps} />;
+}
+
+export default MyApp;
